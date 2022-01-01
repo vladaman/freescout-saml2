@@ -9,8 +9,10 @@ This module is intended to provide SAML 2.0 authentication to [Freescout](https:
 Module was tested with [Jumpcloud](https://jumpcloud.com) Identity Provider.
 
 If you need to perform ordinary login with basic form, add `disable_saml` get parameter to login path (`/login?disable_saml=1`). You may also additionally link users to direct SAML login with parameter `saml` such as (`/login?saml=1`)
+
 ![](Public/Screenshot2022-01-01b.png)
-![](Public/Screenshot2022-01-01 19-01-03.png)
+
+![](Public/Screenshot2022-01-01a.png)
 
 ## Installation
 
