@@ -1,17 +1,17 @@
 {
     "name": "SAML 2.0 SSO",
     "alias": "saml",
-    "description": "",
+    "description": "Provides SSO to Freescout Helpdesk",
     "version": "1.0.0",
-    "detailsUrl": "",
-    "author": "",
-    "authorUrl": "",
+    "detailsUrl": "https://github.com/vladaman/freescout-saml2",
+    "author": "Vladimir Vlach",
+    "authorUrl": "https://github.com/vladaman",
     "requiredAppVersion": "1.7.0",
     "license": "AGPL-3.0",
     "keywords": [],
     "active": 0,
     "order": 0,
-	"img": "public/saml/saml2_icon.png",
+	"img": "https://github.com/vladaman/freescout-saml2/raw/main/Public/saml2_icon.png",
     "providers": [
         "Modules\\Saml\\Providers\\SamlServiceProvider"
     ],

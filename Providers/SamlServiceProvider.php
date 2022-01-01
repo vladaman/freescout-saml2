@@ -118,7 +118,7 @@ class SamlServiceProvider extends ServiceProvider
             ]);
 
             if (!$rq->get('disable_saml', false) && $path == 'login' && !$loggedIn &&
-                $settings['saml.active'] == 'on' && ($settings['saml.exclusive_login'] == 'on' || $rq->get('saml', true))) {
+                $settings['saml.active'] == 'on' && ($settings['saml.exclusive_login'] == 'on' || $rq->get('saml', false))) {
 
                 $auth = new OneLogin_Saml2_Auth($this::getSamlSettings());
                 $ssoBuiltUrl = $auth->login(null, array(), false, false, true);
@@ -128,16 +128,16 @@ class SamlServiceProvider extends ServiceProvider
                 return redirect($ssoBuiltUrl);
             }
 
-			if ($settings['saml.active'] == 'on' && $path == 'logout'){
-				// $auth = new OneLogin_Saml2_Auth($this::getSamlSettings());
+            if ($settings['saml.active'] == 'on' && $path == 'logout') {
+                // $auth = new OneLogin_Saml2_Auth($this::getSamlSettings());
                 // $sloBuiltUrl = $auth->logout();
 
-				// Use link for now since we are getting error: `The IdP does not support Single Log Out`
-				// https://console.jumpcloud.com/userconsole/logout
-				if (!empty($settings['saml.slo_url'])){
-					return redirect($settings['saml.slo_url']);
-				}
-			}
+                // Use link for now since we are getting error: `The IdP does not support Single Log Out`
+                // https://console.jumpcloud.com/userconsole/logout
+                if (!empty($settings['saml.slo_url'])) {
+                    return redirect($settings['saml.slo_url']);
+                }
+            }
 
             return $prev;
         }, 10, 3);

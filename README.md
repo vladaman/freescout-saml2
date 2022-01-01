@@ -1,11 +1,16 @@
+<p align="center">
+  <img src="Public/saml2_icon.png" style="height: 128px" />
+</p>
+
 # SAML 2.0 Module for Freescout
-![](Public/saml2_icon.png)
 
-This module is intended to provide SAML 2.0 authentication to freescout.
+This module is intended to provide SAML 2.0 authentication to [Freescout](https://github.com/freescout-helpdesk/freescout).
 
-Module was tested with Jumpcloud Identity Provider.
+Module was tested with [Jumpcloud](https://jumpcloud.com) Identity Provider.
 
 If you need to perform ordinary login with basic form, add `disable_saml` get parameter to login path (`/login?disable_saml=1`). You may also additionally link users to direct SAML login with parameter `saml` such as (`/login?saml=1`)
+![](Public/Screenshot2022-01-01b.png)
+![](Public/Screenshot2022-01-01 19-01-03.png)
 
 ## Installation
 
