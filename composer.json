@@ -1,0 +1,28 @@
+{
+  "name": "vladaman/freescout-saml2",
+  "description": "",
+  "authors": [
+    {
+      "name": "Vladimir Vlach",
+      "email": "vladaman@gmail.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Modules\\Saml\\Providers\\SamlServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Saml\\": "",
+      "OneLogin\\Saml2\\": ""
+    }
+  },
+  "require": {
+    "onelogin/php-saml": "^4.0"
+  }
+}

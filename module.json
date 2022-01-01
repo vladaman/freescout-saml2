@@ -1,0 +1,23 @@
+{
+    "name": "SAML 2.0 SSO",
+    "alias": "saml",
+    "description": "",
+    "version": "1.0.0",
+    "detailsUrl": "",
+    "author": "",
+    "authorUrl": "",
+    "requiredAppVersion": "1.7.0",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+	"img": "public/saml/saml2_icon.png",
+    "providers": [
+        "Modules\\Saml\\Providers\\SamlServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
