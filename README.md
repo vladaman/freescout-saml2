@@ -21,6 +21,15 @@ If you need to perform ordinary login with basic form, add `disable_saml` get pa
 - configure module on settings page (IdP Entity, IdP ACS URL, etc.)
 - x509 certificate is needed
 
+
+```bash
+cd freescout/Modules
+git clone https://github.com/vladaman/freescout-saml2.git Saml2
+composer install
+
+# -> Activate in Freescout GUI
+```
+
 ## Solving issues
 
 Module uses standard Laravel logging. To see more debug logs add/change following into your `.env` file:

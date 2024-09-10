@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Saml\Http\Controllers;
+namespace Modules\Saml2\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 
 use Session;
 
-use \Modules\Saml\Providers\SamlServiceProvider;
+use \Modules\Saml2\Providers\SamlServiceProvider;
 use OneLogin\Saml2\Auth as OneLogin_Saml2_Auth;
 
 class SamlController extends Controller

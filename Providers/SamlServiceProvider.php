@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Saml\Providers;
+namespace Modules\Saml2\Providers;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 

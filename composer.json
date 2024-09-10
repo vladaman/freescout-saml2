@@ -10,7 +10,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Modules\\Saml\\Providers\\SamlServiceProvider"
+        "Modules\\Saml2\\Providers\\SamlServiceProvider"
       ],
       "aliases": {
       }
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Modules\\Saml\\": "",
+      "Modules\\Saml2\\": "",
       "OneLogin\\Saml2\\": ""
     }
   },

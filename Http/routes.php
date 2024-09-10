@@ -2,7 +2,7 @@
 
 Route::group(['middleware' => 'web',
     'prefix' => \Helper::getSubdirectory(),
-    'namespace' => 'Modules\Saml\Http\Controllers'], function() {
+    'namespace' => 'Modules\Saml2\Http\Controllers'], function() {
 
 	Route::get('/saml_login', 'SamlController@login')->name('saml_login');
 });
@@ -14,7 +14,7 @@ Route::group([
             \Illuminate\Session\Middleware\StartSession::class,
         ],
     'prefix' => \Helper::getSubdirectory(),
-    'namespace' => 'Modules\Saml\Http\Controllers'], function() {
+    'namespace' => 'Modules\Saml2\Http\Controllers'], function() {
 
 	Route::post('/saml_acs', 'SamlController@callback')->name('saml_acs');
 
